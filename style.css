@@ -1,0 +1,171 @@
+/* styles.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+  --primary-color:  ; /* Main background color */
+  --secondary-color: ; /* Secondary background color */
+  --accent-color: ; /* Accent color */
+  --highlight-color: ; /* Highlight color */
+  --text-color: ; /* Default text color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: 16px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays on top */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: bold; /* Set default font weight */
+  position: relative; /* Ensure relative positioning for pseudo-element */
+}
+
+.nav-items li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+main {
+  background-color: var(--secondary-color);
+  padding: 20px;
+  border-radius: 8px;
+  padding-top: 80px; /* To avoid content being hidden behind fixed navbar */
+}
+
+footer {
+  background-color: var(--accent-color);
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* .nav-items a:hover {
+    color: var(--highlight-color); Change text color on hover 
+} */
+
+.nav-items li::after {
+  content: ""; /* Add pseudo-element for underline effect */
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust distance from text */
+  width: 0; /* Initially hide underline */
+  height: 2px; /* Set height of underline */
+  background-color: blue; /* Set color of underline */
+  transition: width 0.3s ease; /* Add transition effect */
+}
+
+.nav-items li:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Adjust the underline for the active page */
+.nav-items .active::after {
+  width: 100%; /* Expand underline for active page */
+}
+
+.container {
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to create space around the content */
+}
+
+.container h1 {
+  font-size: 36px; /* Adjust font size for the heading */
+  font-weight: bold; /* Make the heading bold */
+  color: #333; /* Set color for the heading */
+  margin-bottom: 20px; /* Add margin at the bottom of the paragraph */
+}
+
+.container a.btn:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.container p {
+  font-size: 18px; /* Adjust font size for the paragraph */
+  line-height: 1.6; /* Set line height for better readability */
+  color: #666; /* Set color for the paragraph */
+  margin-bottom: 20px; /* Add margin at the bottom of the paragraph */
+}
+
+
+.container p a.btn {
+  display: inline-block; /* Display the button as a block element */
+  padding: 10px 20px; /* Add padding to create space around the button text */
+  font-size: 16px; /* Adjust font size for the button text */
+  font-weight: bold; /* Make the button text bold */
+  text-decoration: none; /* Remove underline from the button text */
+  color: #fff; /* Set text color for the button text */
+  background-color: #007bff; /* Set background color for the button */
+  border: none; /* Remove border from the button */
+  border-radius: 5px; /* Add border radius to the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.container p a.btn:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.hook {
+  display: inline-block; /* Display as a block element to allow styling */
+  padding: 10px; /* Add padding for spacing */
+  background-color: #f0dbdb; /* Set background color */
+  color: #333; /* Set text color */
+  font-weight: bold; /* Make the text bold */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  text-decoration: none; /* Remove underline from anchor element */
+}
