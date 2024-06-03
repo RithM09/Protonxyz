@@ -9,7 +9,7 @@
 
 /* Color Palette */
 :root {
-  --primary-color:  ; /* Main background color */
+  --primary-color: ; /* Main background color */
   --secondary-color: ; /* Secondary background color */
   --accent-color: ; /* Accent color */
   --highlight-color: ; /* Highlight color */
@@ -140,7 +140,6 @@ footer p {
   margin-bottom: 20px; /* Add margin at the bottom of the paragraph */
 }
 
-
 .container p a.btn {
   display: inline-block; /* Display the button as a block element */
   padding: 10px 20px; /* Add padding to create space around the button text */
@@ -168,4 +167,46 @@ footer p {
   border-radius: 5px; /* Add border radius for rounded corners */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
   text-decoration: none; /* Remove underline from anchor element */
+}
+
+.features {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.features .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin: 0;
 }
