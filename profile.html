@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">InterQuized</a>
+      <ul class="nav-items">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+        <li><a class="active" href="profile.html">Profile</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="profile-container">
+    <div class="profile-header">
+      <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>John Doe</h1>
+      <p>john.doe@example.com</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="profile-content">
+      <div class="profile-section">
+        <h2>Account Settings</h2>
+        <form action="">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" value="John Doe">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" value="john.doe@example.com">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Update</button>
+        </form>
+      </div>
+      <div class="profile-section">
+        <h2>Recent Activity</h2>
+        <ul>
+          <li>Completed "Higher Math 1st Paper" quiz with score 85%</li>
+          <li>Completed "Physics 2nd Paper" quiz with score 92%</li>
+          <li>Completed "Chemistry 1st Paper" quiz with score 78%</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 InterQuized. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
